@@ -1,0 +1,14 @@
+----------------------------------------------------
+
+Greenland_ICESHEET - 
+https://github.com/evangowan/Greenland_ICESHEET
+----------------------------------------------------
+
+Modifications:
+--------------
+
+Moved code directory to the src directory.
+Modified makefile to create the executables in the bin directory.
+Modified run_icesheet.sh and plot.sh to activate the conda environment created for the icesheet1 tool.
+Modified settings.sh to set simulation parameters based on user entered selections and values.
+
