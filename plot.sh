@@ -5,12 +5,12 @@ echo "plot.sh: $@"
 #echo "CONDA_PREFIX: "$CONDA_PREFIX
 
 # Need this before the use command
-#. /etc/environ.sh
-#use -e -r anaconda-7
+. /etc/environ.sh
+use -e -r anaconda-7
 
 # conda init
-#. "/apps/share64/debian10/anaconda/anaconda-7/etc/profile.d/conda.sh"
-source activate "/home/ghubuser/anaconda/anaconda-7/envs/geospacial-plus-2"
+. "/apps/share64/debian10/anaconda/anaconda-7/etc/profile.d/conda.sh"
+conda activate "/apps/share64/debian10/anaconda/anaconda-7/envs/geospacial-plus-2"
 
 #echo "CONDA_PREFIX: "$CONDA_PREFIX
 

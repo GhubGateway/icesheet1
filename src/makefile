@@ -4,14 +4,14 @@ export PATH := /apps/share64/debian10/intel/ifort/compiler/latest/bin:$(PATH)
 # Note, 09/05/2024:
 # ifort: remark #10448: Intel(R) Fortran Compiler Classic (ifort) is now deprecated and will be discontinued late 2024.
 # Intel recommends using the LLVM-based Intel (R) Fortran Compiler (ifx).
-FC = gfortran
-#FC = ifort
+#FC = gfortran
+FC = ifort
 
 # If using gfortran, use this
-FCFLAGS = -O2
+#FCFLAGS = -O2
 
 # if compiling with the Intel Fortran compiler, you need to add an extra flag. Using the Intel fortran compiler is strongly recommended!
-#FCFLAGS = -O2 -assume byterecl
+FCFLAGS = -O2 -assume byterecl
 
 objfiles =  global_parameters.o grids.o read_icefile.o  find_flowline_fisher_adaptive_4.o flowline_location.o 
 
